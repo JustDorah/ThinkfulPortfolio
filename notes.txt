@@ -1,0 +1,84 @@
+
+/*header{
+    padding: 2% 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+/* icons displayed in a row */
+.icons li{
+    list-style: none;
+    display: inline-block;   
+}
+/* keeps icon size small */
+====.icons img{
+    width: 25px;
+}
+/*nav,footer{
+    padding: 1% 0;
+    
+}
+nav{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 10;
+}*/
+
+header{
+    padding: .5em 0;
+    background-color: gray;
+    display: flex;
+    flex-direction:e;
+}c.icons{
+    display: inline;
+}
+
+/*
+.navbar{
+    padding: 0 1em;
+}
+
+.menu{
+    display: none;
+    
+}
+  
+.hamburger{
+    display: flex;
+    flex-direction: row-reverse;
+}*/
+
+
+
+section{
+    min-height: 200px;
+    padding: 6% 0;
+   
+}
+
+section:nth-child(odd){
+    background-color: #dddddd;
+}
+
+/*font-family: 'Nunito Sans', sans-serif;
+font-family: 'Nunito', sans-serif;
+font-family: 'Aleo', serif;*/
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    text-align: center;
+    font-family: 'Nunito', sans-serif;
+}
+
+.icons img{
+    width: 25px;
+}
+
