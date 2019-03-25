@@ -1,18 +1,15 @@
-.main > section{
-    background: gray;
- 
-}
+
 
 .main > section:nth-child(odd){
     background: rgb(202, 228, 236);
 }
 
- #display{
+/* #display{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-gap: .2em;
 }
-/*.main{
+.main{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-gap: .2em;
