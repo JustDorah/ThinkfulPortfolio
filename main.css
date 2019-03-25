@@ -64,13 +64,14 @@ section{
 /* Section A */
 #section-a{
     background-color: rgba(230, 219, 13, 0.397);
+    height: 100vh;
 }
 
 .a1{
     align-self: flex-start;
     animation-duration: 2s;
     animation-iteration-count: 1;
-    height: 20em;
+    height: 45em;
     margin: 0 auto;
     transform-origin: bottom;
 }
@@ -100,38 +101,28 @@ section{
 #section-b{
     display: flex;
     justify-content: center; 
-    /* background-color: rgba(118, 222, 228, 0.719); */
+    background-color:#3BD0D9;
+    height: 100vh;
 }
 .content-wrap {
     display: flex;
     align-items: center;
-    max-width: 445px;
+    max-width: 60em;
     padding: 1em;
 }
 
 .content-wrap p{
     font-family: 'Nunito Sans', sans-serif;
-    font-size: 2em;
+    font-size: 3em;
     font-weight: 600;
-    color: rgba(237, 240, 206, 0.884);
+    color: #F5F6DE;
     text-align: left;
-    padding-top: 9%;
-    padding-left: .4em;
-    filter: drop-shadow(2px 2px 10px rgba(0, 0, 0, 0.952));
+    padding-top: 15%;
+    padding-left: .2em;
 } 
-#section-b .wave-img{
-    position: absolute;
-    background-image: url("images/white-waves2.png");
-    background-position: center;    
-    width: 200%;
-    height: 400px;
-    z-index: -1;
-    opacity: 0.4;
-   
-}
-#section-b .a2{
-    filter: drop-shadow(2px 3px 10px rgba(0, 0, 0, 0.425));
-}
+
+
+
 
 /*font-family: 'Nunito Sans', sans-serif;
 font-family: 'Nunito', sans-serif;
