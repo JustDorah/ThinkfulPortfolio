@@ -8,52 +8,70 @@
     <link href="https://fonts.googleapis.com/css?family=Aleo:700|Nunito|Nunito+Sans" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/normalize/6.0.0/normalize.css">
    <link rel="stylesheet" type="text/css" href="main.css">
+   <link rel="stylesheet" href="grid.css">
 </head>
 
 <body>
     <div class="wrapper">
-        <!--Header Area-->
-        <header role="banner" id="display" class="grid">
+    <!--Header Area-->
+        <header role="banner"id="display" class="grid">
             <div class="icons">
-                <ul>
-                    <li><img src="images/iconEmail.png" alt="email"></li>                    
-                    <li><img src="images/iconGitHub.png" alt="gitHub"></li>                            
-                    <li><img src="images/iconLinkedIn.png" alt="LinkedIn"></li>
+                <ul class="unordered-icon">
+                    <li>
+                        <div class="icon1">
+                            <img src="images/iconEmail.png" alt="email">
+                        </div>
+                    </li>                    
+                    <li>
+                        <div class="icon2">
+                            <img src="images/iconGitHub.png" alt="gitHub">
+                        </div>
+                    </li>                            
+                    <li>
+                        <div class="icon3">
+                            <img src="images/iconLinkedIn1.png" alt="LinkedIn">
+                        </div>
+                    </li>
                 </ul>
             </div>
-            <nav role="navigation" id="navid" class="navbar">                
-                <div class="hamburger">&#9776;</div>
-                <ul class="menu">
-                    <li>About</li>
-                    <li>Work</li>
-                    <li>Contact</li>
-                </ul>
-            </nav>
+            <div>
+                <nav role="navigation" id="navid" class="navbar"> 
+                    <div class="hamburger">&#9776;</div>
+                    <ul class="menu">
+                        <li>About</li>
+                        <li>Work</li>
+                        <li>Contact</li>
+                    </ul>
+                </nav>
+            </div>
         </header>
 
-        <!--Main Area--> 
-        <main role="main">
-            <section id="section-a" >
-                <img src="images/hi1.png" alt="" class="1">
+    <!--Main Area--> 
+        <main role="main" class="main">
+           <!--Section A--> 
+            <section id="section-a" class="animate grid" >
+                <div>
+                    <img src="images/hi1.png" alt="" class="a1 bounce">
+                </div>
             </section>
-            <!--Section A-->
-            <section id="section-b" class="landing">
-                <img src="images/i.png" alt="" class="2" >
-                <p>can build your website</p>
+
+            <!--Section B-->
+            <section id="section-b" class="grid">
+                <img src="images/i.png" alt="" class="a2" >
+                <p>can build you<br>  a functional responsive website</p>
             </section>
 
             <!--Section D-->
-            <section id="section-e"class="work">
-                <img src="images/work.png" alt="" class="3">
+            <section id="section-e"class=" grid">
+                <img src="images/work.png" alt="" class="a3">
                 <a class="portfolio1">
                     <img src="images/quizApp3.png" alt="So you want to be a scientist. Quiz app" />
-                 </a>
-                 
+                 </a>                 
             </section>
 
             <!--Section C-->
-            <section id="section-d" class="aboutSection">
-                <img src="images/about.png" alt="" class="4">
+            <section id="section-d" class="grid">
+                <img src="images/about.png" alt="" class="a4">
                 <p class="aboutJoy">I find happiness in creation</p>
 
                 <p class="aboutWork">Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse debitis ratione modi id
@@ -67,7 +85,7 @@
         </main>
 
         <!--Footer -->
-        <footer id="footer" class="contactInfo">
+        <footer id="footer" class="grid">
            <img src="images/contact.png" alt="" class="5">
             <a href="mailto:dorah@place..." class="emai">dorah.bmw@blach...</a>
         </footer>
