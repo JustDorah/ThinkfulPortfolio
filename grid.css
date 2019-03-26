@@ -1,8 +1,6 @@
 
 
-.main > section:nth-child(odd){
-    background: rgb(202, 228, 236);
-}
+
 
  #display{
     display: grid;

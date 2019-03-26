@@ -121,8 +121,32 @@ section{
     padding-left: .2em;
 } 
 
+/* SECTION C */
+#section-c{
+    position: relative;
+    z-index: 1;
+    background-color: #616161;
+    height: 100vh;
+}
 
+.sticky{
+    position: sticky;
+    top: 1em;
+    opacity: 0.5;
+    z-index: -1;
+}
 
+.heading{
+    font-family: 'nunito sans', sans serif;
+    margin-top: 0;
+    margin-bottom: 20px; 
+    padding-bottom: 0;
+    font-size: 20vw;
+    font-weight: 900px;
+    color: #F5F6DE;
+    font-weight: bolder;
+    
+}
 
 /*font-family: 'Nunito Sans', sans-serif;
 font-family: 'Nunito', sans-serif;
