@@ -101,7 +101,7 @@ section{
 #section-b{
     display: flex;
     justify-content: center; 
-    background-color:#3BD0D9;
+    background-color:rgba(99, 231, 238, 0.822);
     height: 100vh;
 }
 .content-wrap {
@@ -125,29 +125,100 @@ section{
 #section-c{
     position: relative;
     z-index: 1;
-    background-color: #616161;
+    background-color:  rgba(241, 240, 238, 0.877);
     height: 100vh;
+}
+.portfolio-item{
+    width: 90vw;
+
 }
 
 .sticky{
     position: sticky;
-    top: 1em;
+    top: 1.5em;
     opacity: 0.5;
     z-index: -1;
 }
 
 .heading{
-    font-family: 'nunito sans', sans serif;
+    font-family: 'nunito sans', sans-serif;
     margin-top: 0;
     margin-bottom: 20px; 
     padding-bottom: 0;
-    font-size: 20vw;
-    font-weight: 900px;
-    color: #F5F6DE;
-    font-weight: bolder;
-    
+    font-size: 5vw;
+    color: #564303;
+    font-weight: bold;
+    display: flex;
+    align-items: flex-start;  
 }
 
+.frame{
+    position: relative;
+    margin: auto;
+    margin-top: 150px;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    width: 420px;
+    height: 500px;
+    border: 15px solid rgb(88, 63, 3);
+    border-radius: .8em;
+    box-shadow: 0 4px 4px 1px black;
+}
+
+/* Gray Scale */
+.portfolio1{
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
+    -webkit-transition: .3s ease-in-out;
+    transition: .3s ease-in-out;
+}
+.portfolio1:hover {
+    -webkit-filter: grayscale(0);
+    filter: grayscale(0);
+}
+figure{
+    margin: 0;
+}
+/* logos */
+
+.logos{
+    text-align: center;
+    margin-top: .5em;
+}
+.logos li{
+    display: inline-block;
+    padding: .4em;
+    width: 70px;
+}
+
+
+/* GitHub & Live Page Links */
+.workItemLinks a{
+    margin: 1em 0.5em; /* Seems like the margin top isn't */
+    font-size: 1.2em;
+}
+a:link, a:visited{
+    color: #616161;
+}
+a:hover{
+    box-shadow: 0 0 11px black; 
+}
+
+a:link, a:visited, a:hover, a:active{
+    font-weight: bold;
+    text-decoration: none;
+}
+
+/* description paragraph */
+#section-c p {
+    margin-top: 0.5em;
+    font-size: 2.1vh;
+}
+
+
+
+/* CONTACT IMAGE IS TOO BIX FIXXX */
 /*font-family: 'Nunito Sans', sans-serif;
 font-family: 'Nunito', sans-serif;
 font-family: 'Aleo', serif;*/
