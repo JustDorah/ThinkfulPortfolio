@@ -146,7 +146,7 @@ section{
     padding: 1em;
 }
 
-.content-wrap p{
+.content-wrap h3{
     font-family: 'Nunito Sans', sans-serif;
     font-size: 3em;
     font-weight: 600;
@@ -311,6 +311,7 @@ div .talk{
     background-color: rgba(0, 0, 0, 0.171);
     padding: 10px;
     border-radius: 50px;
+    letter-spacing: .1em;
 }
 
 .contact-items{
@@ -326,6 +327,12 @@ div .talk{
 }
 
 /* Media Queries */
+
+@media only screen and (max-width: 450px){ 
+    div .talk{    
+        width: 45vw;    
+    } 
+}
 
 @media only screen and (min-width: 578px) {
     .navbar .hamburger{

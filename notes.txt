@@ -7,3 +7,4 @@ figure out color scheme
 make table with likes and add beating heart to it
 side to side scroll option in about page for different sections
 
+more accessibiity attributes
