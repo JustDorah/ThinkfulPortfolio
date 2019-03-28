@@ -19,29 +19,36 @@
                 <ul class="unordered-icon">
                     <li>
                         <div class="icon1">
-                            <img src="images/iconEmail.png" alt="email">
+                                <a href="mailto:dorah.bmw@gmail.com" class="email link" target="_blank"><img src="images/iconEmail.png" alt="email"></a>
                         </div>
                     </li>                    
                     <li>
                         <div class="icon2">
-                            <img src="images/iconGitHub.png" alt="gitHub">
+                            <a href="https://github.com/JustDorah" class="github link" target="_blank"><img src="images/iconGitHub.png" alt="gitHub"></a>
                         </div>
-                    </li>                            
-                    <li>
+                    </li>       
+                    <!-- <li>
                         <div class="icon3">
                             <img src="images/iconLinkedIn1.png" alt="LinkedIn">
                         </div>
-                    </li>
+                    </li> -->
                 </ul>
             </div>
             <div>
                 <nav role="navigation" id="navid" class="navbar"> 
-                    <div class="hamburger">&#9776;</div>
-                    <ul class="menu">
-                        <li>About</li>
-                        <li>Work</li>
-                        <li>Contact</li>
+                   <div class="dropdown">
+                       <div class="hamburger">&#9776;</div>
+                    </div>
+                    <div class="dropdown-content">  <ul>
+                        <li> <a href="#section-c" target="_self" rel="noreferrer">Work</a></li>
+                        <li><a href="#section-d" target="_self" rel="noreferrer">About</a></li>  
+                        <li><a href="#footer" target="_self" rel="noreferrer">Contact</a></li>
                     </ul>
+                    </div>
+                    <ul class="menu">
+                        <li> <a href="#section-c" target="_self" rel="noreferrer">Work</a></li>
+                        <li><a href="#section-d" target="_self" rel="noreferrer">About</a></li>  <li><a href="#footer" target="_self" rel="noreferrer">Contact</a></li>
+                    </ul> 
                 </nav>
             </div>
         </header>
@@ -57,24 +64,22 @@
 
             <!--Section B-->
             <section id="section-b" class="grid">
-                <!-- <div class="wave-img"></div> -->
-                <div class="content-wrap">
+               <div class="content-wrap">
                     <img src="images/i.png" alt="" class="a2" >
-                    <p>can build you a <br>  functional responsive<br> website</p>
+                    <p>build functional responsive<br> websites</p>
             </div>
             </section>
 
             <!--Section C-->
-            <section id="section-c"class=" grid">
-                <!-- <img src="images/work.png" alt="" class="a3"> -->
+            <section id="section-c" class="grid">
                <div class="sticky">
-                   <h1 class="heading">work</h1>
+                   <h1 class="heading" id="work">work</h1>
                 </div>
                 <div class="portfolio-item">
                 <div class="workAndLogos">
                 <div class="frame">
                     <figure class="portfolio1">
-                    <img src="images/quizApp3.png" alt="So you want to be a scientist. Quiz app" class="workimg1"/>
+                    <img src="images/quizApp3.png" alt="So you want to be a scientist? Quiz app" class="working1"/>
                     </figure>  
                 </div>
                 <ul class="logos">
@@ -93,43 +98,50 @@
                 </ul>
                 </div>
                 <div class="workItemLinks">
-                    <a href="https://github.com/JustDorah/quizApp.final">GitHub Repo</a>
-                    <a href="https://justdorah.github.io/ThinkfulPortfolio/">Live Application</a> 
+                    <a href="https://github.com/JustDorah/quizApp.final" class="github link" target="_blank">GitHub Repo</a>
+
+                    <a href="https://justdorah.github.io/quizApp.final/" class="quizapp link"  target="_blank">Live Application</a> 
                 </div>
                 <p>An interactive app that quizes the user <br> on  their laboratory safety knowledge.</p>
             </div>               
             </section>
 
-            <!--Section C-->
+            <!--Section D-->
             <section id="section-d" class="grid">
-                <img src="images/about.png" alt="" class="a4">
-                <p class="aboutJoy">I find happiness in creation</p>
+                <!-- <img src="images/about.png" alt="" class="a4"> -->
+                <div class="sticky">
+                <h1 class="heading" id="about">about</h1>
+                </div>
+                <div class="frosted">                
+                    <h2 class="aboutJoy about-a">I<span class="heart"><img src="images/heart.png" alt="a heart"></span>creating</h2>
 
-                <p class="aboutWork">Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse debitis ratione modi id
-                    suscipit quis alias impedit aliquid nulla et, minima pariatur, quia eveniet optio nemo quasi ullam
-                    repellendus in!</p>
-
-                <p class="aboutCreating">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Impedit iusto accusantium eligendi hic quaerat quis? Nisi dolorum similique ullam, libero cumque maiores illo voluptate quo tenetur minima voluptatum delectus non!</p>
-
-                <p class="aboutHobby">Lorem ipsum dolor sit amet consectetur adipisicing elit. A, rem officia recusandae consequuntur quaerat quidem neque distinctio odio tempore nihil aut deserunt sed, inventore vitae perspiciatis necessitatibus? Fuga, doloremque atque.</p>
+                    <p class="aboutWork">As a current trainer in a plasma laboratory, I have enjoyed creating and successfully implementing the training program for our Nucleic Acid Testing department. <br/><br/>
+                    Learning to become a fullstack developer with Thinkful has been challenging but absolutely stimulating! <br/><br/>
+                    Outside of work and my studies at Thinkful, I help my parents with their small business. I relax with a good trail run, dance class, and most especially with good friends. I also enjoy reading a good book and working on my small but growing garden. 
+                    <br><br/>
+                    I enjoy finding and implementing solutions to current or future problems and I can't wait to create an amazing website with your critical input.</p>
+                </div>
+                
             </section>        
         </main>
 
         <!--Footer -->
         <footer id="footer" class="grid">
-           <img src="images/contact.png" alt="" class="5">
-            <a href="mailto:dorah@place..." class="emai">dorah.bmw@blach...</a>
+            <div class="sticky">
+                <h1 class="heading" id="contact">contact</h1>
+            </div>
+            <div class="talk">
+                <p>LET'S TALK</p>
+            </div>
+            <address class="contact-items">
+                <a href="mailto:dorah.bmw@gmail.com" class="email link" target="_blank"><img src="images/iconEmail.png" alt="email icon"></a>
+            
+                <a href="https://github.com/JustDorah" class="github link" target="_blank"><img src="images/iconGitHub.png" alt="GitHub icon"></a>
+
+            </address>           
+            
         </footer>
     </div>
 </body>
 
 </html>
-
-<!--halant and nunito sans
-    nunito sans and nunito 
-    open sans and nunito
-
-    F4E16A
-
-
--->

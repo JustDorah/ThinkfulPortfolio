@@ -8,10 +8,10 @@ body{
     font-family: 'Nunito', sans-serif;
     text-align: center;
 }
-/* question: how to make stick to top */
+
 header{
     padding: .1em 0;
-    background-color: rgba(245, 246, 222, 0.733); 
+    background-color: rgba(245, 246, 222, 0.733);
     position: sticky;
     position: -webkit-sticky;
     top: 0;
@@ -33,7 +33,7 @@ ul li{
 
 .icons li, .menu li{
     display: inline-block;
-    padding: 0 .2em;
+    padding: 0 .5em;
 }
 
 .navbar{
@@ -47,18 +47,51 @@ ul li{
     display: flex;
     flex-direction: row-reverse;
     align-items: center;
-    height: 2em;    
+    height: 2em;
+    margin-right: .5em;
+    font-size: 2vh;
+    cursor: pointer;
 }
 
-/* sections */
+/* DROPDOWN */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    padding: 12px 16px;
+    font-size: 1.7vh;
+    background-color: rgba(245, 246, 222, 0.644);
+    color: #616161;
+    /* z-index: 5;  */
+  }
+
+.navbar:hover .dropdown-content{
+    display: inline-block;
+    cursor: pointer;
+}
+
+/* **LINK STYLINGS** */
+a, a:link, a:visited, a:hover, a:active{
+    text-decoration: none;
+    cursor: pointer;
+    color: black;
+
+}
+.link:hover,.menu li:hover{
+    filter: drop-shadow(0 0 3px black);
+}
+
+.dropdown-content li:hover{
+    filter: drop-shadow(0 0 3px black);
+}
+
+
+
+/**** SECTIONS ****/
 section{
     min-height: 15em;
     padding: 0;
-}
-
-.portfolio1 img{
-    width: 25em;
-    height: 30em;
+    z-index: 2;
 }
 
 /* Section A */
@@ -71,7 +104,7 @@ section{
     align-self: flex-start;
     animation-duration: 2s;
     animation-iteration-count: 1;
-    height: 45em;
+    height: 41em;
     margin: 0 auto;
     transform-origin: bottom;
 }
@@ -100,10 +133,11 @@ section{
 /* SECTION B */
 #section-b{
     display: flex;
-    justify-content: center; 
+    justify-content: center;
     background-color:rgba(99, 231, 238, 0.822);
     height: 100vh;
 }
+
 .content-wrap {
     display: flex;
     align-items: center;
@@ -119,7 +153,7 @@ section{
     text-align: left;
     padding-top: 15%;
     padding-left: .2em;
-} 
+}
 
 /* SECTION C */
 #section-c{
@@ -128,42 +162,47 @@ section{
     background-color:  rgba(241, 240, 238, 0.877);
     height: 100vh;
 }
+.portfolio1 img{
+    width: auto;
+    height: 25em;
+}
 .portfolio-item{
-    width: 90vw;
-
+    width: 100%;
 }
 
 .sticky{
     position: sticky;
-    top: 1.5em;
+    top: 2.8em;
     opacity: 0.5;
-    z-index: -1;
+    /* z-index: -1; */
 }
 
 .heading{
     font-family: 'nunito sans', sans-serif;
     margin-top: 0;
-    margin-bottom: 20px; 
+    margin-bottom: 20px;
     padding-bottom: 0;
-    font-size: 5vw;
-    color: #564303;
+    font-size: 5.5vw;  /* Q?? */
     font-weight: bold;
     display: flex;
-    align-items: flex-start;  
+    align-items: flex-start;
+}
+
+.heading #work{
+    color: #564303;
 }
 
 .frame{
+    margin: 2.5em auto auto;
     position: relative;
-    margin: auto;
-    margin-top: 150px;
     display: flex;
     align-items: center;
     overflow: hidden;
-    width: 420px;
-    height: 500px;
+    width: 23em;
+    height: 26.4em;
     border: 15px solid rgb(88, 63, 3);
     border-radius: .8em;
-    box-shadow: 0 4px 4px 1px black;
+    box-shadow: 0 4px 4px 1px rgb(34, 33, 33);
 }
 
 /* Gray Scale */
@@ -193,21 +232,10 @@ figure{
 }
 
 
-/* GitHub & Live Page Links */
+/* GitHub & Live Page*/
 .workItemLinks a{
-    margin: 1em 0.5em; /* Seems like the margin top isn't */
+    margin: 1em 0.5em;
     font-size: 1.2em;
-}
-a:link, a:visited{
-    color: #616161;
-}
-a:hover{
-    box-shadow: 0 0 11px black; 
-}
-
-a:link, a:visited, a:hover, a:active{
-    font-weight: bold;
-    text-decoration: none;
 }
 
 /* description paragraph */
@@ -216,9 +244,132 @@ a:link, a:visited, a:hover, a:active{
     font-size: 2.1vh;
 }
 
+/* SECTION D */
+#section-d{
+    position: relative;
+    z-index: 1;
+    background-color:#8b0b65c4;
+    height: 100vh;
+}
 
 
-/* CONTACT IMAGE IS TOO BIX FIXXX */
-/*font-family: 'Nunito Sans', sans-serif;
-font-family: 'Nunito', sans-serif;
-font-family: 'Aleo', serif;*/
+#section-d .aboutJoy{
+    font-size: 10vh;
+    font-weight: bold;
+    margin: .5em auto auto;
+}
+
+#section-d .aboutJoy img{
+    padding: 0 .2em;
+    width: 11vh;
+    filter:drop-shadow(2px 4px 1px #4e0237f8);
+}
+
+.heading #about{
+    color: black;
+}
+
+div .frosted{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 80vw; /* Q?? */
+    margin: auto;
+}
+
+.frosted p{
+    font-size: 2vh;
+    text-align: left;
+    margin-top: 3vh;
+    /* background-color: rgba(208, 185, 218, 0.068); */
+    padding: 5px 5px;
+    box-shadow: 0 4px 4px 2px black;
+    text-shadow: 0 1px rgb(94, 60, 3);
+}
+
+/* **FOOTER** */
+footer{
+    background-color: #0756ccce;
+    height: 50vh;
+}
+
+#footer #contact{
+    color:rgb(12, 12, 12);
+}
+
+div .talk{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 35vw;
+    margin: auto;
+    font-size: 5vh;
+    margin-bottom: .6em;
+    color: #F5F6DE;
+    background-color: rgba(0, 0, 0, 0.171);
+    padding: 10px;
+    border-radius: 50px;
+}
+
+.contact-items{
+    position: relative;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.contact-items a{
+    margin: 1em 1.1em;
+}
+
+/* Media Queries */
+
+@media only screen and (min-width: 578px) {
+    .navbar .hamburger{
+        display: none;
+    }
+    .dropdown-content{
+        display: none;
+    }
+    .navbar:hover .dropdown-content{
+        display: none;
+    }
+
+
+    .navbar .menu{
+        display: flex;
+        font-size: 2.5vh;
+        /* font-weight: bold; */
+        flex-direction: row;
+        justify-content: flex-end;
+        width: auto;
+        align-items: center;
+        height: 30px;
+    }
+   .menu li{
+       display: flex;
+       margin: 0 .5em;
+   }
+   .sticky{
+    top: 0;
+    }
+     .heading{
+        padding-top: 35px;
+    }
+    .portfolio1 img{
+        width: auto;
+        height: 30em;
+    }
+    .frame{
+        height: 31.4em;
+        width: 27.9em;
+    }
+}
+
+@media only screen and (min-width: 750px){
+    div .frosted{
+         width: 730px;
+    }
+}
+
